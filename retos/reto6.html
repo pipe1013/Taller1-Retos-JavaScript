@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reto 6 JavaScript</title>
+  <link rel="icon" type="image/x-icon" href="../img/icon.png">
+  <link rel="stylesheet" type="text/css" href="../css/styleReto6.css">
+</head>
+
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+    </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Círculo</h2>
+      <button class="btn-perimetro" onclick="mostrarModal('circulo')">Perímetro</button>
+      <button class="btn-area" onclick="mostrarModal('circulo')">Área</button>
+    </div>
+
+    <div class="card">
+      <h2>Triángulo</h2>
+      <button class="btn-perimetro" onclick="mostrarModal('triangulo')">Perímetro</button>
+      <button class="btn-area" onclick="mostrarModal('triangulo')">Área</button>
+    </div>
+
+    <div class="card">
+      <h2>Rectángulo</h2>
+      <button class="btn-perimetro" onclick="mostrarModal('rectangulo')">Perímetro</button>
+      <button class="btn-area" onclick="mostrarModal('rectangulo')">Área</button>
+    </div>
+
+    <div class="card">
+      <h2>Cuadrado</h2>
+      <button class="btn-perimetro" onclick="mostrarModal('cuadrado')">Perímetro</button>
+      <button class="btn-area" onclick="mostrarModal('cuadrado')">Área</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div id="modal-content-area">
+        <!-- Contenido del formulario -->
+      </div>
+      <div id="modal-result" style="display: none;">
+        <h3>Resultado:</h3>
+        <p id="modal-result-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/scriptReto6.js"></script>
+</body>
+</html>
